@@ -1,10 +1,8 @@
 import { Heading } from '@chakra-ui/react'
 
 const GoodTimeBadTimeHeading: React.FC<
-  React.ComponentProps<typeof Heading>
+  React.ComponentPropsWithoutRef<typeof Heading>
 > = ({ children, ...props }) => (
-  // with a nice bright gradient
-  // glow effect
   <Heading
     as='h1'
     fontSize={{ base: '4xl', md: '4xl' }}
