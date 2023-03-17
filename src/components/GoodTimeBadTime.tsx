@@ -1,7 +1,7 @@
 import { Heading } from '@chakra-ui/react'
 
 const GoodTimeBadTimeHeading: React.FC<
-  React.ComponentPropsWithoutRef<typeof Heading>
+  React.ComponentProps<typeof Heading>
 > = ({ children, ...props }) => (
   <Heading
     as='h1'
