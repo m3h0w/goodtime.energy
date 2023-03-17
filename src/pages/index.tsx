@@ -11,7 +11,7 @@ import BadTime from '@/components/BadTime'
 import GoodTime from '@/components/GoodTime'
 
 const inter = Inter({ subsets: ['latin'] })
-const CARBON_INTENSITY_THRESHOLD = 200
+const CARBON_INTENSITY_THRESHOLD = 300
 
 export default function Home() {
   const { data: country, error, isLoading } = useCountry()
