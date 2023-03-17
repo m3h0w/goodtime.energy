@@ -62,9 +62,11 @@ export default function Home() {
         )}
 
         <VStack>
-          <Text fontSize={'x-small'}>
-            The current carbon intensity for {country} is {carbonIntensity}
-          </Text>
+          {country && carbonIntensity && (
+            <Text fontSize={'x-small'}>
+              The current carbon intensity for {country} is {carbonIntensity}
+            </Text>
+          )}
           <a
             href='https://www.electricitymaps.com/'
             className={styles.card}

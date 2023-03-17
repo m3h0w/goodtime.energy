@@ -14,10 +14,29 @@ const getCurrentLocation: () => Promise<GeolocationCoordinates> = () => {
   })
 }
 
+// const useLocationPermission = () => {
+//   const [permission, setPermission] = useState<PermissionState>('prompt')
+
+//   useEffect(() => {
+//     getCurrentLocation()
+//   })
+
+//   useEffect(() => {
+//     const getPermission = async () => {
+//       const { state } = await navigator.permissions.query({
+//         name: 'geolocation',
+//       })
+//       setPermission(state)
+//     }
+//     getPermission()
+//   }, [])
+
+//   return permission
+// }
+
 export const useCurrentLocation = () => {
   return useQuery('location', async () => {
-    const location = await getCurrentLocation()
-    return location
+    return getCurrentLocation()
   })
 }
 

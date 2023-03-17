@@ -6,6 +6,7 @@ import { ChakraProvider } from '@chakra-ui/react'
 
 const queryClient = new QueryClient()
 
+//deploy
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <QueryClientProvider client={queryClient}>
